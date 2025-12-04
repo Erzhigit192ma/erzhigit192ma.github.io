@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASA SERVICE CENTAR DOO</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f3f3f3;
+        color: #222;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 32px;
+        color: #111;
+    }
+
+    .section {
+        padding: 60px 10%;
+    }
+
+    /* Главный экран */
+    .hero {
+        position: relative;
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+    }
+    .hero-title {
+        font-size: 56px;
+        font-weight: 700;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 20px auto 40px;
+        line-height: 1.6;
+    }
+    .btn {
+        background: #00afff;
+        padding: 14px 32px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: #0088cc;
+    }
+
+    /* Metro style cards */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        border-left: 8px solid #00afff;
+    }
+    .card h3 {
+        margin-top: 0;
+    }
+
+    /* Картинка в блоке "Про нас" */
+    .about-img {
+        display: block;
+        width: 45%;
+        margin: 40px auto 0;
+        border-radius: 10px;
+    }
+
+    /* Контакты */
+    .contact-section {
+        height: 100vh;
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .contact-section p {
+        max-width: 700px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+        background: #222;
+        color: #aaa;
+        padding: 20px 10%;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+<section class="hero" id="top">
+    <div class="hero-content">
+        <div class="hero-title">ASA SERVICE CENTAR DOO</div>
+        <div class="hero-subtitle">
+            Ваш технички партнер за стабилну дигиталну инфраструктуру, паметна IT решења и развој поузданих мобилних апликација.  
+            Помажемо компанијама да поједноставе процесе, унапреде сигурност и убрзају технолошки развој.
+        </div>
+        <a href="#contact" class="btn">Контакти</a>
+    </div>
+</section>
+
+<!-- ПРО НАС -->
+<section class="section" id="about">
+    <h2>Ко смо ми заправо</h2>
+    <p>
+        ASA SERVICE CENTAR DOO је технолошка компанија специјализована за техничко консалтинг саветовање, IT подршку и развој 
+        мобилних апликација које помажу предузећима да се ефикасније повежу са својим клијентима.  
+        Наш тим комбинује практично искуство са дубоким разумевањем модерних технологија, што нам омогућава да градимо решења 
+        која су стабилна, скалабилна и потпуно усклађена са потребама вашег пословања. 
+        Сарађујемо са фирмама различитих величина и индустрија, а наш приступ увек остаје персонализован – пажљиво слушамо, анализирамо 
+        и стварамо систем који заиста ради за вас.
+    </p>
+
+    <img src="https://media.istockphoto.com/id/2188043436/photo/cheerful-mid-adult-man-smiling-and-talking-to-four-business-colleagues-in-meeting.webp?a=1&b=1&s=612x612&w=0&k=20&c=0IPdJgS6offLtuJZd6weLiDMkezjPbNeHcTxJrfcAdY=" class="about-img">
+</section>
+
+<!-- СЕРВИСЫ -->
+<section class="section" id="services">
+    <h2>Шта ми радимо</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Техничко консалтинг саветовање</h3>
+            <p>
+                Пружамо стратешко усмеравање у избору технологија, архитектури система и оптимизацији постојеће инфраструктуре. 
+                Наши стручњаци анализирају ваше потребе и предлажу решења која доносе реалне резултате. 
+                Циљ нам је да ваша организација буде технолошки спремна за будућност.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>IT подршка и одржавање</h3>
+            <p>
+                Обезбеђујемо свакодневну техничку подршку, мониторинг система и брзу реакцију у случају проблема. 
+                Наш тим ради на превенцији кварова, повећању безбедности и стабилности пословања. 
+                Уз нас, ваш IT систем ради тихо – али поуздано.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Развој мобилних апликација</h3>
+            <p>
+                Креирамо функционалне, брзе и интуитивне мобилне апликације за Android и iOS платформе. 
+                Фокусирамо се на квалитет кода, оптимизацију и прилагођено корисничко искуство. 
+                Од идеје до завршног производа – стварамо апликације које доносе вредност.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="section" id="advantages">
+    <h2>Зашто клијенти бирају нас</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Дубоко техничко искуство</h3>
+            <p>
+                Наš тим има дугогодишње искуство у развоју, интеграцијама и IT управљању, што нам омогућава да решимо 
+                чак и најсложеније техничке изазове — ефикасно и прецизно.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Персонализован приступ</h3>
+            <p>
+                Свака компанија је јединствена – зато наша решења никада нису шаблонска. 
+                Анализирамо ваше циљеве и развијамо стратегију која одговара само вашему пословању.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Брза и поуздана подршка</h3>
+            <p>
+                Наши клијенти добијају стабилну, доступну и брзу техничку подршку. 
+                Решавамо проблеме пре него што утичу на ваше пословање и увек смо ту када затреба.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="section" id="process">
+    <h2>Како изгледа сарадња са нама</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>1. Анализа и консултације</h3>
+            <p>
+                Разумемо ваш пословни модел, техничке потребе и изазове. 
+                Након почетног разговора припремамо јасне препоруке и предлог приступа.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Израда решења</h3>
+            <p>
+                Наш тим развија техничко решење — од инфраструктуре, преко подршке до развоја апликација. 
+                Све се тестира, оптимизује и прилагођава вашој организацији.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Дугорочна подршка</h3>
+            <p>
+                Након имплементације, настављамо да пратимо рад система, одржавамо стабилност и надограђујемо технолошка решења 
+                како ваше потребе расту.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="contact-section" id="contact">
+    <h2>Ступите у контакт са нама</h2>
+    <p>
+        Уколико имате питања, идеју или желите да унапредите своје пословање – пишите нам.  
+        Наш тим ће вам одговорити у најкраћем року и предложити најбољи могући приступ вашем захтеву.  
+        Верујемо у партнерство, транспарентност и дугорочну сарадњу.
+    </p>
+
+    <p style="margin-top:30px; font-size:22px;">
+        <b>team@asaservicecentar.biz</b><br>
+        Pomoravska 6, Beograd 11000, PAK 192121
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 ASA SERVICE CENTAR DOO — All rights reserved.
+</footer>
+
+</body>
+</html>
